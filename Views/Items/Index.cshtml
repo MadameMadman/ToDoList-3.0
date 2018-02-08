@@ -7,11 +7,14 @@
     <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
   </head>
   <body>
-    <h1>To Do List</h1>
-    <h3><a href='/categories/new'>Add a new category</a></h3>
-    <h3><a href='/categories'>View categories</a></h3>
+    @{
+  Layout = "_Layout";
+}
+    <img id="money" src="https://media.giphy.com/media/jEwE20qDP9OMg/giphy.gif">
+    <h3><a href='/categories/new'>Add a new password</a></h3>
+    <h3><a href='/categories'>View passwords</a></h3>
     <form action="/items/delete" method="post">
-     <button type="submit" name="button">Clear all items</button>
+     <button type="submit" name="button">Clear all passwords</button>
    </form>
   </body>
 </html>

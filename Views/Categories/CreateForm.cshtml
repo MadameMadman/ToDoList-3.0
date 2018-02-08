@@ -7,10 +7,13 @@
     <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
   </head>
   <body>
-    <h1>Add a category</h1>
-    <p>Add a category here:</p>
+    @{
+  Layout = "_Layout";
+}
+
+    <h1>Add a password</h1>
+    <p><i>make sure it is correct</i></p>
     <form action="/categories" method="post">
-      <label for="category-name">Category name</label>
       <input id="category-name" name="category-name" type="text">
       <button type="submit">Add</button>
     </form>
