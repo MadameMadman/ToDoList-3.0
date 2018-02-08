@@ -17,6 +17,10 @@ namespace Project.Models
       _id = _instances.Count;
       _items = new List<Item>{};
     }
+    public void SetName(string newName)
+    {
+      _name = newName;
+    }
 
     public string GetName()
     {
