@@ -7,7 +7,7 @@ namespace Project.Controllers
 {
     public class CategoriesController : Controller
     {
-
+        [Produces("text/html")]
         [HttpGet("/categories")]
         public ActionResult Categories()
         {
@@ -15,12 +15,14 @@ namespace Project.Controllers
             return View(allCategories);
         }
 
+        [Produces("text/html")]
         [HttpGet("/categories/new")]
         public ActionResult CreateForm()
         {
             return View();
         }
 
+        [Produces("text/html")]
         [HttpPost("/categories")]
         public ActionResult Create()
         {
@@ -28,7 +30,7 @@ namespace Project.Controllers
             List<Category> allCategories = Category.GetAll();
             return View("Categories", allCategories);
         }
-
+        [Produces("text/html")]
         [HttpGet("/categories/{id}")]
         public ActionResult Details(int id)
         {
@@ -40,7 +42,7 @@ namespace Project.Controllers
             return View(model);
         }
 
-
+        [Produces("text/html")]
         [HttpPost("/items")]
         public ActionResult CreateItem()
         {

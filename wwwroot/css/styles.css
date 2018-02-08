@@ -1,0 +1,17 @@
+body {
+  background: linear-gradient(to bottom, #000000, #434343);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+
+ul, li{
+  list-style: none;
+}
+
+form {
+  color: black;
+}
